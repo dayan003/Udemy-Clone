@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+
+    padding: 0;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar__left {
+    color: #7B30AC;
+}
+
+.navbar__mid {
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar__mid input {
+    border: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.navbar__mid input:focus {
+    outline: none;
+}
+
+.navbar__right {
+    display: flex;
+    gap: 10px;
+}
+
+.categories {
+    display: flex;
+    padding: 10px;
+    border-bottom: solid black 1px;
+    justify-content: space-around;
+}
+
+.categories p {
+    background-color: #7B30AC;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+}
+
+.sales-image img {
+    position: relative;
+}
+
+.sales-text {
+    position: absolute;
+    top: 40%;
+    color: orangered;
+    padding: 40px;
+    padding-left: 40px;
+}
+
+.sales-text h1 {
+    padding-left: 20px;
+}
+
+.recommanded {
+    padding: 20px;
+}
+
+.recommanded__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.course-card {
+    width: 200px;
+    border: solid black 1px;
+}
+
+.course-card img {
+    height: 50%;
+    width: 100%;
+}
+
+.course-card h3 {
+    padding-top: 10x;
+    padding-left: 10px;
+}
+
+.course-card p {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.topics {
+    padding: 20px;
+}
+
+.topics__container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.topics__container p {
+    padding: 10px;
+    border: solid #7B30AC 2px;
+    color: #7B30AC;
+    font-size: 20px;
+    border-radius: 40px;
+    flex-grow: 1%;
+    flex-basis: 25%;
+}
+
+.popular__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.popular__title {
+    padding-left: 20px;
+}
+
+.popular__desc {
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+}
+
+.popular-course {
+    width: 250px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.popular-course img {
+    height: 50%;
+    width: 100%;
+}
+
+.popular-course h3 {
+    padding-top: 10x;
+}
+
+.popular-course p {
+    padding-top: 10px;
+}
+
+.footer {
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+.footer__one {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__one p {
+    margin: 20px;
+}
+
+.footer__two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+}
