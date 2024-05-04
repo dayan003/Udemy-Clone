@@ -6,6 +6,7 @@
 
 body {
     font-family: "Gabarito", sans-serif;
+    cursor: pointer;
 }
 
 .navbar {
@@ -47,7 +48,7 @@ body {
 
 .navbar__right {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 /*My Learning popup*/
@@ -57,7 +58,7 @@ body {
     cursor: pointer;
 }
 
-.myLearning__popup{
+.mylearning__popup{
 
     position: absolute;
     border: solid black 1px;
@@ -66,12 +67,12 @@ body {
     width: 90px;
     height: 60px;
     padding: 10px;
-    top: 50px;
-    right: 20px;
+    top: 150%;
+    right: 0px;
     display: none;
 }
 
-.mylearning:hover.myLearning__popup{
+.mylearning:hover .mylearning__popup{
     display: block;
 }
 
@@ -118,7 +119,6 @@ body {
 
 .course-card {
     width: 200px;
-    border: solid black 1px;
 }
 
 .course-card img {
