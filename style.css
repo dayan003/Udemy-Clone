@@ -53,12 +53,12 @@ body {
 
 /*My Learning popup*/
 
-.mylearning{
+.mylearning {
     position: relative;
     cursor: pointer;
 }
 
-.mylearning__popup{
+.mylearning__popup {
 
     position: absolute;
     border: solid black 1px;
@@ -72,7 +72,7 @@ body {
     display: none;
 }
 
-.mylearning:hover .mylearning__popup{
+.mylearning:hover .mylearning__popup {
     display: block;
 }
 
@@ -91,22 +91,23 @@ body {
     cursor: pointer;
 }
 
-.categories p:hover{
-transition: 1.4s;
-background-color: transparent;
-color: #7B30AC;
+.categories p:hover {
+    transition: 1.4s;
+    background-color: transparent;
+    color: #7B30AC;
 
 }
 
 .sales-image img {
-    position: relative;
+    width: 100%;
 }
 
 .sales-text {
     position: absolute;
+    width: 60%;
     top: 40%;
     color: orangered;
-    padding: 40px;
+    padding: 2%;
     padding-left: 40px;
     animation-name: zoom;
     animation-duration: 3s;
@@ -115,17 +116,19 @@ color: #7B30AC;
 }
 
 @keyframes zoom {
-    0%{
+    0% {
         transform: scale(0);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: scale(1);
         opacity: 1;
     }
-    
+
 }
-.sales-text:hover{
+
+.sales-text:hover {
     color: #7B30AC;
 }
 
@@ -145,7 +148,9 @@ color: #7B30AC;
 }
 
 .course-card {
-    width: 200px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 10px;
 }
 
 .course-card img {
@@ -155,16 +160,18 @@ color: #7B30AC;
 
 .course-card h3 {
     padding-top: 10x;
-    padding-left: 10px;
 }
 
 .course-card p {
     padding-top: 10px;
-    padding-left: 10px;
 }
 
 .topics {
     padding: 20px;
+}
+
+.topics__title{
+   padding-bottom: 20px;
 }
 
 .topics__container {
@@ -193,6 +200,12 @@ color: #7B30AC;
 
 .popular__title {
     padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.popular h1{
+    padding-top: 20px;
+
 }
 
 .popular__desc {
@@ -202,9 +215,9 @@ color: #7B30AC;
 }
 
 .popular-course {
-    width: 250px;
-    padding-bottom: 30px;
-    padding-left: 20px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 10px;
 }
 
 .popular-course img {
@@ -241,4 +254,59 @@ color: #7B30AC;
     align-items: center;
     padding-left: 20px;
     padding-top: 10px;
+}
+
+/* Media queries */
+
+@media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    body {
+        flex-basis: 50%;
+    }
+
+    .topics {
+        display: none;
+        font-size: 10px;
+    }
+
+    .navbar__mid,
+    .navbar__right,
+    .categories {
+        display: none;
+    }
+
+    .navbar__menu {
+        display: block;
+    }
+
+    .recommanded {
+        flex-basis: 10%;
+    }
+
+    .sales-text {
+        top: 20%;
+    }
+
+    .popular {
+        flex-basis: 18%;
+        flex-grow: 1;
+        flex-basis: 20%;
+        margin: 10px;
+    }
+
+
+    .popular__container {
+        top: 10px;
+    }
+
+    .popular-course{
+        bottom: 40px;
+        padding-left: 10px;
+    }
 }
