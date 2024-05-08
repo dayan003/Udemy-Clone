@@ -68,7 +68,7 @@ body {
     height: 60px;
     padding: 10px;
     top: 150%;
-    right: 0px;
+    right: 20px;
     display: none;
 }
 
@@ -88,6 +88,14 @@ body {
     border-radius: 30px;
     color: white;
     padding: 10px;
+    cursor: pointer;
+}
+
+.categories p:hover{
+transition: 1.4s;
+background-color: transparent;
+color: #7B30AC;
+
 }
 
 .sales-image img {
@@ -100,6 +108,26 @@ body {
     color: orangered;
     padding: 40px;
     padding-left: 40px;
+    animation-name: zoom;
+    animation-duration: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+.sales-text:hover{
+    transition: 1s;
+    color: #7B30AC;
 }
 
 .sales-text h1 {
